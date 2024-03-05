@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto+Slab:wght@300&family=Roboto:wght@300&display=swap');
+
+*{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #c6e9f5;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.inpu {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+
+.para {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
+
+.container1 {
+    position: relative;
+    padding: 20px;
+}
+
+.container2 {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hea1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.tempr {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.othertem {
+    font-size: 18px;
+    z-index: 0;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #4a90e2;
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+.wave.-one {
+    z-index: 1;
+    animation: waveMove 10s linear infinite;
+}
+
+.wave.-two {
+    z-index: 2;
+    animation: waveMove 12s linear infinite reverse;
+}
+
+.wave.-three {
+    z-index: 3;
+    animation: waveMove 8s linear infinite;
+}
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0) rotate(180deg);
+    }
+    100% {
+        transform: translateX(-100%) rotate(180deg);
+    }
+}
+
